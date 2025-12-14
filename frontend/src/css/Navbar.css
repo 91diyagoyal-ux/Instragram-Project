@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 54px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-input {
+  width: 268px;
+  height: 36px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 14px;
+  outline: none;
+}
+
+.nav-icons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 22px;
+}
+
+.nav-icons li {
+  cursor: pointer;
+}
+
+.nav-icons .material-symbols-outlined {
+  font-size: 24px;
+}
+
+.nav-menu {
+  display: none; /* Hide desktop menu for now, use icons */
+}
+
+.nav-mobile {
+  display: none;
+}
+
+img {
+  width: 103px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  .search-input {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-icons {
+    display: none;
+  }
+  .nav-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: none;
+  }
+  .nav-left {
+    display: none;
+  }
+  .nav-center {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+}
+
+.primaryBtn {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  color: white;
+  background: #0095f6;
+  border-radius: 8px;
+  margin-left: 20px;
+  transition: all 0.25s ease;
+}
+
+.primaryBtn:hover {
+  background: #007acc;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
